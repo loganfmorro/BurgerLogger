@@ -1,5 +1,21 @@
 const connection = require("../config/connection.js");
 
+function objToSql(object) {
+    const keyArray = [];
+  
+    for (let key in object) {
+      let value = object[key];
+      if (Object.hasOwnProperty.call(object, key)) {
+        if (typeof value === "string" && value.indexOf(" ") >= 0) {
+          value = "'" + value + "'";
+        }
+        keyArray.push(key + "=" + value);
+      }
+    }
+  
+    return keyArray.toString();
+  }  
+
 function printQuestionMarks(num) {
   var arr = [];
 
