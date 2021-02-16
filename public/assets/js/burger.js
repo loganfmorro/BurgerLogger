@@ -2,7 +2,7 @@ $(function() {
     //code for the devour button for each burger on menu
     $(".devour").on("click", function(event) {
         const id = $(this).data("id");
-        const update = {devoured: true};
+        const update = { devoured: true };
 
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
