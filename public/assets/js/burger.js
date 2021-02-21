@@ -1,5 +1,5 @@
 $(function() {
-    //code for the devour button for each burger on menu
+    //here we devour the burgers
     $(".devour").on("click", function(event) {
         const id = $(this).data("id");
         const update = { devoured: true };
@@ -24,7 +24,7 @@ $(function() {
     })
 
     //code for submitting a new burger to the menu
-    $(".create").on("submit", function (event) {
+    $(".create").on("submit", function(event) {
         event.preventDefault();
 
         const newBurger = {
