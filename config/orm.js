@@ -34,7 +34,7 @@ const orm = {
       cb(result);
     });
   },
-  insertOne: function(table, columns, values, cb) {
+  insert: function(table, columns, values, cb) {
     let query = "INSERT INTO " + table;
 
     query += " (";
@@ -53,7 +53,7 @@ const orm = {
   },
 
   //This is where we can update certain columns such as name of the burger
-  updateOne: function(table, updates, condition, cb) {
+  update: function(table, updates, condition, cb) {
     let query = "UPDATE " + table;
 
     query += " SET ";
@@ -68,7 +68,7 @@ const orm = {
       cb(result);
     });
   }, 
-  deleteOne: function(table, condition, cb) {
+  delete: function(table, condition, cb) {
     let query = "DELETE FROM " + table;
 
     query += " WHERE ";
