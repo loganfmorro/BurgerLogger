@@ -14,7 +14,7 @@ Simple web application that uses MySQL, Node, Express, and Handlebars to add bur
 Node must be installed, as well as the Express, Handlebars and mySQL packages.
 
 ## Deployed Heroku Application
-[Deployed Heroku Application] ( insert link here )
+https://loganmorro-burgerlogger.herokuapp.com/
 
 ## Screenshot
 
