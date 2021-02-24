@@ -17,7 +17,7 @@ Node must be installed, as well as the Express, Handlebars and mySQL packages.
 https://loganmorro-burgerlogger.herokuapp.com/
 
 ## Screenshot
-
+![Screen Shot 2021-02-24 at 5 15 50 PM](https://user-images.githubusercontent.com/68932638/109073160-04bb8d80-76c4-11eb-9878-4d7c117298c9.png)
 
 ## Licenses
 ### MIT License
